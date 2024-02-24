@@ -3,3 +3,7 @@
   $light-complement: lighten($complement, 30%);
   @return $light-complement;
 }
+
+@function boxShadow($offsetX, $offsetY, $radius, $color) {
+  @return $offsetX $offsetY $radius $color;
+}

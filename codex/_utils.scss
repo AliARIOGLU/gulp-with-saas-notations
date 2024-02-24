@@ -158,6 +158,15 @@ $utilities: (
       "xxl": $font-size-xxl,
     ),
   ),
+  "box-shadow": (
+    "prefix": "shadow",
+    "values": (
+      "sm": boxShadow(-4px, 4px, 4px, #888888),
+      "md": boxShadow(4px, 4px, 8px, #ccc),
+      "lg": boxShadow(8px, 8px, 16px, #ccc),
+      "xl": boxShadow(16px, 16px, 24px, #ccc),
+    ),
+  ),
 );
 
 // generate utility classes

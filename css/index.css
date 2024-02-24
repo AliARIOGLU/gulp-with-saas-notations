@@ -71,13 +71,8 @@ img {
   flex-flow: row wrap;
 }
 
-.gap-2 > * {
-  padding: 20px;
-}
-
 .gap-2 {
-  margin-left: -20px;
-  margin-right: -20px;
+  gap: 10px;
 }
 
 .justify-center {
@@ -470,12 +465,16 @@ img {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .card .card-title {
   font-size: 1.5rem;
   padding-bottom: 1rem;
   font-weight: bold;
   color: #326dee;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card .card-body {
   font-size: 1rem;
@@ -681,4 +680,8 @@ img {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.shadow-sm {
+  box-shadow: -4px 4px 4px #888888;
 }
