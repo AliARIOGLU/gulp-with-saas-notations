@@ -6,16 +6,6 @@ $breakpoints: (
   "xl": 1200px,
 );
 
-//TODO : alttaki hata veriyor onu düzenlemeye çalış
-
-// @each $breakpoint, $size in $breakpoints {
-//   @mixin #{$breakpoint} {
-//     @media (min-width: $size) {
-//       @content;
-//     }
-//   }
-// }
-
 @mixin xs {
   @media (min-width: map-get($breakpoints, "xs")) {
     @content;

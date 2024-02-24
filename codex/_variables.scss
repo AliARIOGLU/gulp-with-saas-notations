@@ -42,6 +42,9 @@ $base-margin: 0.75rem !default;
 $base-border-thickness: 1px !default;
 $base-border-radius: 20px !default;
 $base-border-radius-sm: 8px !default;
+$base-border-radius-md: 12px !default;
+$base-border-radius-lg: 24px !default;
+$base-border-radius-full: 999px !default;
 
 $double-border-thickness: $base-border-radius * 0.3;
 
@@ -51,6 +54,7 @@ $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 // font sizes
 $base-font-size: 1rem;
 $font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;

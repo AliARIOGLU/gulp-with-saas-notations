@@ -11,7 +11,7 @@ function buildStyles() {
 }
 
 function watchTask() {
-  gulp.watch(["sass/*.scss", "*.html"], buildStyles);
+  gulp.watch(["sass/*.scss", "codex/**/*.scss", "*.html"], buildStyles);
 }
 
 // function streamTask() {

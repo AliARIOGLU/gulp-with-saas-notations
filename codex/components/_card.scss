@@ -2,6 +2,7 @@
 
 .card {
   display: block;
+  position: relative;
   padding: $base-padding;
   border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
@@ -23,13 +24,18 @@
     }
   }
 
+  span {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+  }
+
   .card-button {
-    background-color: map-get($colors, "info");
-    border: 0;
+    @include btn(map-get($colors, "primary"));
     width: 100%;
-    padding: $base-padding;
-    font-size: math.div($font-size-lg, 1.2);
-    color: map-get($colors, "white");
-    border-radius: $base-border-radius-sm;
+    font-size: $font-size-md;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 8px;
   }
 }

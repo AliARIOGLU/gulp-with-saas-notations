@@ -39,7 +39,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 // justify content classes
 
 @each $val in $layout-values {
-  .justfiy-#{$val} {
+  .justify-#{$val} {
     justify-content: $val;
   }
 }

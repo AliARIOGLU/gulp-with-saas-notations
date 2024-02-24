@@ -4,10 +4,16 @@
   display: inline-block;
   border: 0;
   padding: $base-padding $base-padding * 2;
-  border-radius: $base-border-radius;
+  border-radius: $base-border-radius * 5;
   background-color: $bg-color;
+  outline: none;
+
+  &:focus {
+    background-color: lighten($bg-color, 30%);
+  }
 }
 
+// default button
 .btn {
   @include btn;
 }
